@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+  font-size: 30px;
+}
+h1 {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* ------Header------ */
+header,
+.header-box,
+.header-box > img {
+  height: 100px;
+}
+
+/* ------Main------ */
+.movies-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.category {
+  /* border: solid 1px White; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-box {
+  height: 20px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.carroussel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.affiche {
+  height: 170px;
+  object-fit: cover;
+}
