@@ -5,13 +5,14 @@ const Principal = ({ data }) => {
     <main className="movies-box container">
       {data.map((data, index) => {
         console.log(data.category);
-
-        <Section
-          category={data.category}
-          movies={data.images}
-          data={data}
-          key={index}
-        />;
+        return (
+          <Section
+            category={data.category}
+            movies={data.images}
+            data={data}
+            key={index}
+          />
+        );
       })}
     </main>
   );
